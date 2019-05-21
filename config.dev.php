@@ -40,7 +40,8 @@ class Brizy_Config {
 	static public function getCompilerUrls() {
 		return new Brizy_Admin_UrlIterator(
 			array(
-				'http://editor:3000/wp-compile'
+				"http://localhost:5000/compile/v2"
+				// 'http://editor:3000/wp-compile'
 			)
 		);
 	}
@@ -55,7 +56,7 @@ class Brizy_Config {
 
 	static public function getEditorBaseUrls() {
 		return new Brizy_Admin_UrlIterator(
-			array( 'http://www.brizy.org' )
+			array( 'https://app.brizy.io' )
 		);
 	}
 
